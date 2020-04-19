@@ -25,7 +25,7 @@ jobs:
                   scriptPath 'Jenkinsfile'
                   scm {
                     git {
-                        remote { url 'https://github.com/albertnoble/pipeline-test.git' }
+                        remote { url 'https://github.com/albertnoble/ExampleNet.git' }
                         branch '*/master'
                         extensions {}
                     }
