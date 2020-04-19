@@ -12,7 +12,7 @@ pipeline {
         stage ('Testing Stage') {
 
             steps {
-                    sh 'dotnet test
+                    sh 'dotnet test'
             }
         }
         
