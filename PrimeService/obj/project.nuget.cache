@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "DAWkCaxdIVhpeM64E12BE1sOYxMxU/xd6RmgpOAxHja+9F8r/1kZ/ZGR10qRBDA1TkU2qcaLgOJvbYwTL0u6KA==",
+  "success": true,
+  "projectFilePath": "/Users/albertoserrano/ExampleNet/PrimeService/PrimeService.csproj",
+  "expectedPackageFiles": [
+    "/Users/albertoserrano/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/albertoserrano/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,9 @@
+/Users/albertoserrano/ExampleNet/PrimeService/bin/Debug/netstandard2.0/PrimeService.deps.json
+/Users/albertoserrano/ExampleNet/PrimeService/bin/Debug/netstandard2.0/PrimeService.dll
+/Users/albertoserrano/ExampleNet/PrimeService/bin/Debug/netstandard2.0/PrimeService.pdb
+/Users/albertoserrano/ExampleNet/PrimeService/obj/Debug/netstandard2.0/PrimeService.csprojAssemblyReference.cache
+/Users/albertoserrano/ExampleNet/PrimeService/obj/Debug/netstandard2.0/PrimeService.csproj.CoreCompileInputs.cache
+/Users/albertoserrano/ExampleNet/PrimeService/obj/Debug/netstandard2.0/PrimeService.AssemblyInfoInputs.cache
+/Users/albertoserrano/ExampleNet/PrimeService/obj/Debug/netstandard2.0/PrimeService.AssemblyInfo.cs
+/Users/albertoserrano/ExampleNet/PrimeService/obj/Debug/netstandard2.0/PrimeService.dll
+/Users/albertoserrano/ExampleNet/PrimeService/obj/Debug/netstandard2.0/PrimeService.pdb

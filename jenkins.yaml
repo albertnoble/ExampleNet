@@ -1,0 +1,48 @@
+jenkins:
+  systemMessage: "AutomatingGuy3 demo: configured automatically with JCasC plugin\n\n"
+tool:
+  git:
+    installations:
+    - home: "git"
+      name: "Default"
+  maven:
+    installations:
+    - name: "Maven 3"
+      properties:
+      - installSource:
+          installers:
+            - maven:
+                id: "3.5.4"
+jobs:
+  - script: >
+      pipelineJob('pipeline') {
+          definition {
+              cpsScm {
+                  scriptPath 'Jenkinsfile'
+                  scm {
+                    git {
+                        remote { url 'https://github.com/albertnoble/pipeline-test.git' }
+                        branch '*/master'
+                        extensions {}
+                    }
+                  }
+              }
+          }
+      }
+
+credentials:
+  system:
+    domainCredentials:
+    - credentials:
+      - usernamePassword:
+          id: "a8ee1ede-5a52-4b53-bb6b-02e4b5e97cd2"
+          password: "{AQAAABAAAAAQ1vUEl/e6Hv8QriBTa5a72kj/yw0acPamEU3IuW2oSjI=}"
+          scope: GLOBAL
+          username: "albertnoble"
+# plugins:
+#   required:
+#     blueocean: latest
+#     workflow-aggregator: latest
+#     pipeline-maven: latest
+#     configuration-as-code-support: latest
+#     job-dsl: latest
