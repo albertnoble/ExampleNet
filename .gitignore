@@ -1,0 +1,16 @@
+.idea/
+out/
+.gradle/
+build/
+.settings
+.classpath
+.project
+/bin
+*.iml
+**.DS_Store**
+deployment/
+target/
+tomcat/
+.DS_Store
+*.log
+ccpalog/
