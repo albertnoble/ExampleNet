@@ -1,22 +1,17 @@
 pipeline {
     agent any
 
-    stages {
-        stage ('Build Stage') {
 
-            steps {
-                    sh "\"C:/Program Files/dotnet/dotnet.exe\" restore \"ExampleNet/ExampleNet.sln\""
-                    sh "\"C:/Program Files/dotnet/dotnet.exe\" build \"ExampleNet/ExampleNet.sln\""
-
+    node('dotnet-22') {
+        stages {
+            stage ('Restore Stage') {
+                sh "dotnet restore"
             }
-        }
 
-        stage ('Testing Stage') {
-
-            steps {
-                    sh 'dotnet test'
+            stage ('Testing Stage') {
+                sh "dotnet test"
             }
+            
         }
-        
     }
 }
