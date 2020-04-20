@@ -2,11 +2,11 @@ pipeline {
     agent any
         stages {
             stage ('Restore Stage') {
-                sh "dotnet restore"
+		steps{ sh "dotnet restore" }   
             }
 
             stage ('Testing Stage') {
-                sh "dotnet test"
+		steps{ sh "dotnet test" }
             }
             
         }
