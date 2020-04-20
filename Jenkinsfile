@@ -5,8 +5,8 @@ pipeline {
         stage ('Build Stage') {
 
             steps {
-                    bat "\"C:/Program Files/dotnet/dotnet.exe\" restore \"ExampleNet/ExampleNet.sln\""
-                    bat "\"C:/Program Files/dotnet/dotnet.exe\" build \"ExampleNet/ExampleNet.sln\""
+                    sh "\"C:/Program Files/dotnet/dotnet.exe\" restore \"ExampleNet/ExampleNet.sln\""
+                    sh "\"C:/Program Files/dotnet/dotnet.exe\" build \"ExampleNet/ExampleNet.sln\""
 
             }
         }
