@@ -3,5 +3,5 @@ node {
         checkout scm
 
     stage 'Build'
-        sh 'nuget restore ExampleNet.sln'
+        sh 'dotnet restore ExampleNet.sln'
 }
