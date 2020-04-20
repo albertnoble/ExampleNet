@@ -2,10 +2,12 @@ pipeline {
     agent any
 
     stages {
-        stage ('Compile Stage') {
+        stage ('Build Stage') {
 
             steps {
-                    sh 'dotnet build'
+                    bat "\"C:/Program Files/dotnet/dotnet.exe\" restore \"ExampleNet/ExampleNet.sln\""
+                    bat "\"C:/Program Files/dotnet/dotnet.exe\" build \"ExampleNet/ExampleNet.sln\""
+
             }
         }
 
