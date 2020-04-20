@@ -2,11 +2,17 @@ pipeline {
     agent any
         stages {
             stage ('Restore Stage') {
-		steps{ sh "dotnet restore" }   
+		steps{ 
+                        sh "export PATH=${PATH}:${HOME}/.dotnet/tools"
+			sh "dotnet restore" 
+		}   
             }
 
             stage ('Testing Stage') {
-		steps{ sh "dotnet test" }
+		steps{ 
+                    sh "export PATH=${PATH}:${HOME}/.dotnet/tools"
+                    sh "dotnet test" 
+                }
             }
             
         }
