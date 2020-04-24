@@ -1,7 +1,14 @@
-FROM jenkins/jenkins:lts
-COPY plugins.txt /usr/share/jenkins/ref/plugins.txt
-COPY jenkins.yaml /var/jenkins_home/jenkins.yaml
-RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt
+FROM jenkinsci/blueocean
+
+
+# TODO: whatever customer installation steps that need to happen
+ENV JENKINS_REF /usr/share/jenkins/ref
+
+
+COPY jenkins_home/plugins.txt $JENKINS_REF/
+COPY jcasc/jenkins.yaml $JENKINS_REF/
+
+RUN /usr/local/bin/install-plugins.sh < $JENKINS_REF/plugins.txt
 
  # Switch to root to install .NET Core SDK
 USER root

@@ -43,6 +43,44 @@ credentials:
           password: "{AQAAABAAAAAQ1vUEl/e6Hv8QriBTa5a72kj/yw0acPamEU3IuW2oSjI=}"
           scope: GLOBAL
           username: "albertnoble"
+
+jenkins:
+  agentProtocols:
+  - "JNLP4-connect"
+  - "Ping"
+  authorizationStrategy:
+    roleBased:
+      roles:
+        global:
+        - name: "Admin"
+          description: "Jenkins Administrators"
+          permissions:
+          - "Overall/Administer"
+          assignments:
+          - "jenkins_admin"
+        - name: "Developer"
+          description: "Permission to create/run jobs and configure agents"
+          permissions:
+          - "Agent/Provision"
+          - "Job/Move"
+          - "Job/Build"
+          - "Job/Create"
+          - "Job/Discover"
+          - "Agent/Configure"
+          - "Job/Read"
+          - "Agent/Connect"
+          - "Agent/Delete"
+          - "Run/Replay"
+          - "Agent/Disconnect"
+          - "Run/Delete"
+          - "Agent/Create"
+          - "Job/Cancel"
+          - "Run/Update"
+          - "Job/Delete"
+          - "Agent/Build"
+          - "Job/Configure"
+          - "Job/Workspace"
+
 # plugins:
 #   required:
 #     blueocean: latest
