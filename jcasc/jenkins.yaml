@@ -5,17 +5,6 @@ tool:
     installations:
     - home: "git"
       name: "Default"
-  msbuild:
-    installations:
-      - name: "MSBuild Latest"
-        home: "C:\\WINDOWS\\Microsoft.NET\\Framework\\14.0\\Bin\\MSBuild.exe"
-        defaultArgs: "/p:Configuration=Debug"
-  msTestInstallation:
-    installations:
-    - defaultArgs: "/category:SmokeTests"
-      home: "C:\\Program Files (x86)\\Microsoft Visual Studio 10.0\\Common7\\IDE\\MSTest.exe"
-      name: "MSTest test"
-      omitNoIsolation: true
       
 jobs:
   - script: >
@@ -48,38 +37,6 @@ jenkins:
   agentProtocols:
   - "JNLP4-connect"
   - "Ping"
-  authorizationStrategy:
-    roleBased:
-      roles:
-        global:
-        - name: "Admin"
-          description: "Jenkins Administrators"
-          permissions:
-          - "Overall/Administer"
-          assignments:
-          - "jenkins_admin"
-        - name: "Developer"
-          description: "Permission to create/run jobs and configure agents"
-          permissions:
-          - "Agent/Provision"
-          - "Job/Move"
-          - "Job/Build"
-          - "Job/Create"
-          - "Job/Discover"
-          - "Agent/Configure"
-          - "Job/Read"
-          - "Agent/Connect"
-          - "Agent/Delete"
-          - "Run/Replay"
-          - "Agent/Disconnect"
-          - "Run/Delete"
-          - "Agent/Create"
-          - "Job/Cancel"
-          - "Run/Update"
-          - "Job/Delete"
-          - "Agent/Build"
-          - "Job/Configure"
-          - "Job/Workspace"
 
 # plugins:
 #   required:

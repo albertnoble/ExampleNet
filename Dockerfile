@@ -1,4 +1,4 @@
-FROM jenkinsci/blueocean
+FROM jenkins/jenkins:lts
 
 
 # TODO: whatever customer installation steps that need to happen
