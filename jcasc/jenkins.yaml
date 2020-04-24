@@ -1,5 +1,5 @@
 jenkins:
-  systemMessage: "AutomatingGuy3 demo: configured automatically with JCasC plugin\n\n"
+  systemMessage: "Testing\n\n"
 tool:
   git:
     installations:
