@@ -32,6 +32,11 @@ credentials:
           password: "{AQAAABAAAAAQ1vUEl/e6Hv8QriBTa5a72kj/yw0acPamEU3IuW2oSjI=}"
           scope: GLOBAL
           username: "albertnoble"
+      - usernamePassword:
+          id: "604291b7-42de-42ee-b771-d14fa78f06c0"
+          password: "{AQAAABAAAAAQPaykPz1wIt9pT5nk1gsL3PCSeoILJJFTGl7tWJ5AyOc=}"
+          scope: GLOBAL
+          username: "administrator" 
 
 jenkins:
   agentProtocols:
